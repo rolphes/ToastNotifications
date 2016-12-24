@@ -32,6 +32,7 @@
         <Setter Property="VerticalAlignment" Value="Center" />
         <Setter Property="Width" Value="200" />
         <Setter Property="TextWrapping" Value="Wrap" />
+        <Setter Property="FontSize" Value="14" />
     </Style>
 
     <Style TargetType="{x:Type Button}" x:Key="NotificationCloseButton">

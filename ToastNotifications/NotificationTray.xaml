@@ -27,7 +27,7 @@
 
         <DataTemplate x:Key="InformationTemplate">
             <toast:NotificationControl 
-                Background="RoyalBlue" 
+                Background="#5BC0DE" 
                 Icon="{StaticResource InformationIcon}" 
                 Notification="{Binding}"  
                 NotificationClosed="Notification_OnNotificationClosed" 
@@ -39,7 +39,7 @@
 
         <DataTemplate x:Key="SuccessTemplate">
             <toast:NotificationControl 
-                Background="LimeGreen" 
+                Background="#5CB85C" 
                 Icon="{StaticResource SuccessIcon}" 
                 Notification="{Binding}"  
                 NotificationClosed="Notification_OnNotificationClosed" 
@@ -50,7 +50,7 @@
 
         <DataTemplate x:Key="WarningTemplate">
             <toast:NotificationControl
-                Background="Orange" 
+                Background="#F0AD4E" 
                 Icon="{StaticResource WarninIcon}" 
                 Notification="{Binding}"  
                 NotificationClosed="Notification_OnNotificationClosed" 
@@ -61,7 +61,7 @@
 
         <DataTemplate x:Key="ErrorTemplate">
             <toast:NotificationControl 
-                Background="OrangeRed" 
+                Background="#D9534F" 
                 Icon="{StaticResource ErrorIcon}" 
                 Notification="{Binding}" 
                 NotificationClosed="Notification_OnNotificationClosed" 
@@ -71,10 +71,10 @@
         </DataTemplate>
 
         <toast:NotificationTypeTemplateSelector x:Key="NotificationTemplateSelector" 
-				InformationTemplate="{StaticResource InformationTemplate}"
-				SuccessTemplate="{StaticResource SuccessTemplate}"
-				WarningTemplate="{StaticResource WarningTemplate}"
-				ErrorTemplate="{StaticResource ErrorTemplate}"/>
+                InformationTemplate="{StaticResource InformationTemplate}"
+                SuccessTemplate="{StaticResource SuccessTemplate}"
+                WarningTemplate="{StaticResource WarningTemplate}"
+                ErrorTemplate="{StaticResource ErrorTemplate}"/>
     </UserControl.Resources>
     <Grid x:Name="Container">
         <toast:NotificationPopup x:Name="Popup" 
